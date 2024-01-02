@@ -2,6 +2,7 @@
 .vscode/**
 .idea/**
 **/data/**
+go_server
 
 *keys/**
 !keys/template-*
