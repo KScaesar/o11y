@@ -3,6 +3,7 @@
 server:
 	go build go_server.go && ./go_server &
 	python py_server.py &
+	@echo ""
 
 stop:
 	@echo "Closing servers..."
@@ -12,6 +13,6 @@ stop:
 client:
 	@echo "Calling Python API..."
 	curl http://127.0.0.1:8000/py/hello
-
+	@echo ""
 	@echo "Calling Go API..."
 	curl http://127.0.0.1:8080/go/hello
